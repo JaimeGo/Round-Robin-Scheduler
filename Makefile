@@ -1,10 +1,10 @@
-all: main.exe
+all: scheduler
 
-main.exe: main.o
-	 gcc -o main.exe main.o
+scheduler: main.o
+	 gcc -o scheduler main.o
 
 main.o: main.c
 	 gcc -c main.c
      
 clean:
-	 rm main.o main.exe
+	 rm main.o scheduler
